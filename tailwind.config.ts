@@ -7,11 +7,9 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-  
     extend: {
       screens:{
         '3xl':'1680px',
-
         'sm': '100px',
         'md': '700px',
         'lg': '1040px'

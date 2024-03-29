@@ -1,6 +1,5 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: "export",
-};
+import nextIntl from "next-intl/plugin";
 
-export default nextConfig;
+const withNextIntl = nextIntl("./i18n/i18n.ts");
+
+export default withNextIntl({});
