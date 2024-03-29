@@ -53,7 +53,6 @@ export default function Home() {
               height={300}
             />
           </div>
-
           <div className="flex w-full justify-center gap-4 md:gap-8">
             <Link
               target="_blank"
