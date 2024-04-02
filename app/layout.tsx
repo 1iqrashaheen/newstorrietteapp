@@ -50,6 +50,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="public/favicon.ico" sizes="any" />
+      </head>
       <body className={`${customFont.variable} font-sans`}>
         <Suspense fallback={null}>
           <main>{children}</main>
