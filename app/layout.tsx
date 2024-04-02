@@ -1,41 +1,53 @@
-import localfont from 'next/font/local';
-import { Suspense } from 'react';
-import './globals.css';
-import { Metadata } from 'next';
+import localfont from "next/font/local";
+import { Suspense } from "react";
+import "./globals.css";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Storiette App',
+  title: "Storiette App",
   description:
-    'Challenge your closest friends are the art of suspenseful storiette writing',
+    "Challenge your closest friends are the art of suspenseful storiette writing",
+  icons: {
+    icon: [
+      {
+        url: "icon.ico",
+        href: "/icon.ico",
+      },
+    ],
+  },
 };
 
 const customFont = localfont({
   src: [
     {
-      path: '../public/PTSans-Regular.ttf',
-      weight: '400',
-      style: 'normal',
+      path: "../public/PTSans-Regular.ttf",
+      weight: "400",
+      style: "normal",
     },
     {
-      path: '../public/PTSans-Italic.ttf',
-      weight: '400',
-      style: 'italic',
+      path: "../public/PTSans-Italic.ttf",
+      weight: "400",
+      style: "italic",
     },
     {
-      path: '../public/PTSans-Bold.ttf',
-      weight: '700',
-      style: 'normal',
+      path: "../public/PTSans-Bold.ttf",
+      weight: "700",
+      style: "normal",
     },
     {
-      path: '../public/PTSans-BoldItalic.ttf',
-      weight: '700',
-      style: 'italic',
+      path: "../public/PTSans-BoldItalic.ttf",
+      weight: "700",
+      style: "italic",
     },
   ],
-  variable: '--font-pt',
+  variable: "--font-pt",
 });
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body className={`${customFont.variable} font-sans`}>
