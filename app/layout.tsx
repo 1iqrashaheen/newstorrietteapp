@@ -8,12 +8,9 @@ export const metadata: Metadata = {
   description:
     "Challenge your closest friends are the art of suspenseful storiette writing",
   icons: {
-    icon: [
-      {
-        url: "icon.ico",
-        href: "/icon.ico",
-      },
-    ],
+    icon: "./favicon.ico",
+    shortcut: ".favicon.ico",
+    // apple: "./apple-icon.png",
   },
 };
 
@@ -51,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="public/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={`${customFont.variable} font-sans`}>
         <Suspense fallback={null}>
