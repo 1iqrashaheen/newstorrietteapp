@@ -56,7 +56,9 @@ export default function Home() {
           <div className="flex w-full justify-center gap-4 md:gap-8">
             <Link
               target="_blank"
-              href="https://play.google.com/store/apps/details?id=com.artsykidz.app&pli=1"
+              // href="https://play.google.com/store/apps/details?id=com.artsykidz.app&pli=1"
+
+              href=" https://play.google.com/store/apps/details?id=com.hipsterstudiosllc.storietteapp"
             >
               <Image
                 unoptimized
@@ -69,7 +71,8 @@ export default function Home() {
             </Link>
             <Link
               target="_blank"
-              href="https://apps.apple.com/pk/app/storiette/id6456606515"
+              // href="https://apps.apple.com/pk/app/storiette/id6456606515"
+              href="https://apps.apple.com/app/storiette-write-short-story/id6478928559"
             >
               <Image
                 unoptimized
